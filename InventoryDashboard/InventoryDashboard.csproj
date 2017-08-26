@@ -109,6 +109,12 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\Chart.min.js" />
     <Content Include="Scripts\ui-bootstrap-tpls-1.1.2.min.js" />
+    <Content Include="SinglePageApp\App.js" />
+    <Content Include="SinglePageApp\Controller\GridController.js" />
+    <Content Include="SinglePageApp\Controller\MainController.js" />
+    <Content Include="SinglePageApp\Controller\ProductController.js" />
+    <Content Include="SinglePageApp\View\Grid.html" />
+    <Content Include="SinglePageApp\View\Product.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

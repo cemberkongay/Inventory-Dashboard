@@ -1,0 +1,26 @@
+﻿<div class="container-fluid table-responsive">
+    <hr />
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th width="20%">Item</th>
+                <th width="30%">Title</th>
+                <th width="8%">On Order</th>
+                <th width="7%">Due</th>
+                <th width="11%">Inventory Level</th>
+                <th width="20%">Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in data.inventoryData.data">
+                <td>{{x.Item}}</td>
+                <td><a style="cursor: pointer" ng-click="openProduct(x)">{{x.ProductTitle}}</a></td>
+                <td>{{x.OnOrder}}</td>
+                <td>{{x.Due}}</td>
+                <td>{{x.InventoryLevel}}</td>
+                <td>{{x.Location}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<uib-pagination total-items="data.inventoryData.totalitems" max-size="8" ng-model="data.inventoryData.currentPage" ng-change="pageChanged()"></uib-pagination>
